@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CreateAccount.CreateAccountHome"
+    tools:showIn="@layout/activity_create_account_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <Button
+                android:id="@+id/start_create_account_btn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hacen_casablanca_light"
+                android:text="@string/start_create_account_res"
+                android:textAllCaps="false"
+                android:textColor="#0A60D1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                style="@style/profileStyledBackButton"/>
+
+            <TextView
+                android:id="@+id/already_have_account_txt"
+                style="@style/profileDetailsTextMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="55dp"
+                android:fontFamily="@font/hacen_casablanca_light"
+                android:text="@string/already_have_account_res"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
