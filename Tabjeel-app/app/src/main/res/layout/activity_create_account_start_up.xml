@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".CreateAccount.CreateAccountStartUpActivity"
-    android:background="@color/blue">
+    tools:context=".CreateAccount.CreateAccountStartUpActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -35,13 +34,24 @@
                 android:background="@color/white"
                 android:id="@+id/linearLayout">
 
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/splash_anim_icon"
+                    android:layout_width="250dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/registration_animation" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="bottom"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="5dp">
 
                 </RelativeLayout>
 

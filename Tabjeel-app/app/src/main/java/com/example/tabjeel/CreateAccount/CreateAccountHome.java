@@ -7,9 +7,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.example.tabjeel.Login.LoginActivity;
 import com.example.tabjeel.R;
-import com.example.tabjeel_dneme1.anim.LoadingGreenActivity;
-import com.example.tabjeel_dneme1.login.LoginActivity;
+import com.example.tabjeel.anim.LoadingGreenActivity;
+
 
 public class CreateAccountHome extends AppCompatActivity implements View.OnClickListener {
 

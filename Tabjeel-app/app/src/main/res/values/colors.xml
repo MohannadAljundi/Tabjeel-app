@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#FEC30D</color>
+    <color name="colorPrimaryDark">#3AB44B</color>
+    <color name="colorAccent">#26AAE0</color>
+    <color name="yellow">#FFD502</color>
+    <color name="blue">#0A60D1</color>
+    <color name="blue_sky">#26AAE0</color>
+    <color name="white">#fff</color>
+    <color name="green">#009788</color>
+    <color name="Gray">#8A8C8A</color>
+    <color name="Red">#F10D0D</color>
+    <color name="green_grows">#4CAF50</color>
+    <color name="green_app">#3AB44B</color>
+    <color name="black">#000</color>
+
+
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
 </resources>

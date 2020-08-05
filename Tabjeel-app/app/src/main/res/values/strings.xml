@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Tabjeel</string>
+    <string name="welcome_statement_res">أهلاً بك في</string>
+    <string name="tabjeel_word_res">تبــجـيـل</string>
+    <string name="start_create_account_res">إنشاء حساب جديد</string>
+    <string name="already_have_account_res">لديك حساب؟ تسجيل الدخول</string>
+    <string name="basic_info_word_res">المعلومات الاساسية</string>
+    <string name="first_name_res">الاسم الاول</string>
+    <string name="second_name_res">اسم الاب</string>
+    <string name="four_part_name_res">الاسم الرباعي</string>
+    <string name="password_res">كلمة المرور</string>
+
+    <string-array name="gender">
+        <item>الجنس</item>
+        <item>ذكر</item>
+        <item>انثى</item>
+    </string-array>
 </resources>

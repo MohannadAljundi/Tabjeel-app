@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Login.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/create_account_shadow_btn"
+                android:drawableRight="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/hacen_casablanca_light"
+                android:hint="البريد الاكتروني او رقم الهاتف"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textColorHint="#000"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/create_account_shadow_btn"
+                android:drawableRight="@drawable/ic_baseline_lock_blue_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/hacen_casablanca_light"
+                android:hint="كلمة السر"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textAlignment="textEnd"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/create_account_4_btn"
+                    android:fontFamily="@font/hacen_casablanca_light"
+                    android:text="تسجيل الدخول"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/you_do_not_have_account_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ليس لديك حساب؟ تسجيل جديد"
+                    android:fontFamily="@font/hacen_casablanca_light"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

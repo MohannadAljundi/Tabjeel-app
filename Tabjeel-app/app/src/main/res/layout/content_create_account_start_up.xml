@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
@@ -20,228 +19,173 @@
         <RelativeLayout style="@style/profileDetailsLayout">
 
             <EditText
-                android:id="@+id/user_first_name"
-                android:layout_width="300dp"
+                android:id="@+id/user_full_name"
+                android:layout_width="330dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/create_account_2_btn"
+                android:background="@drawable/create_account_shadow_btn"
                 android:drawableEnd="@drawable/ic_baseline_short_text_24"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="@string/first_name_res"
+                android:hint="@string/four_part_name_res"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff"
+                android:textColor="#000"
+                android:textColorHint="#000"
                 android:textSize="16sp"
+                android:textAlignment="textStart"
                 android:layout_centerHorizontal="true"/>
 
 
         </RelativeLayout>
 
         <RelativeLayout style="@style/profileDetailsLayout">
+
             <EditText
-                android:id="@+id/user_second_name"
-                android:layout_width="300dp"
+                android:id="@+id/user_email"
+                android:layout_width="330dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/create_account_2_btn"
-                android:drawableEnd="@drawable/ic_baseline_short_text_24"
+                android:background="@drawable/create_account_shadow_btn"
+                android:drawableEnd="@drawable/ic_baseline_email_24"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="@string/second_name_res"
+                android:hint="البريد اللاكتروني                                          اختياري"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff"
+                android:textColor="#000"
+                android:textColorHint="#000"
                 android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart"
                 android:layout_centerHorizontal="true"/>
         </RelativeLayout>
-
-
-        <RelativeLayout style="@style/profileDetailsLayout">
-            <EditText
-                android:id="@+id/user_last_name"
-                android:layout_width="300dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/create_account_2_btn"
-                android:drawableRight="@drawable/ic_baseline_short_text_24"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="اسم العائلة"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff"
-                android:layout_centerHorizontal="true"/>
-        </RelativeLayout>
-
 
         <RelativeLayout style="@style/profileDetailsLayout">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:id="@+id/user_phone"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/create_account_shadow_btn"
+                    android:drawableEnd="@drawable/ic_baseline_phone_enabled_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/hacen_casablanca_light"
+                    android:hint="رقم الهاتف"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:textAlignment="textEnd"/>
+
+                <EditText
+                    android:id="@+id/user_country_phone_key"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/create_account_shadow_btn"
+                    android:drawableEnd="@drawable/ic_jordan_flag"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/hacen_casablanca_light"
+                    android:hint="+962"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:editable="false"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
             <EditText
-                android:id="@+id/user_type_spinner"
-                android:layout_width="300dp"
+                android:id="@+id/user_password"
+                android:layout_width="330dp"
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/create_account_2_btn"
-                android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_24"
-                android:drawableRight="@drawable/ic_baseline_people_24"
+                android:background="@drawable/create_account_shadow_btn"
+                android:drawableEnd="@drawable/ic_baseline_lock_blue_24"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="نوع المستخدم"
+                android:hint="@string/password_res"
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:textAlignment="textEnd"
                 android:layout_centerHorizontal="true"/>
-
-
         </RelativeLayout>
 
+        <RelativeLayout style="@style/profileDetailsLayout">
 
-        <RelativeLayout
-            style="@style/profileDetailsLayout">
 
-            <!--            <ImageView-->
-            <!--                android:id="@+id/current_location_icon"-->
-            <!--                android:layout_width="72dp"-->
-            <!--                android:layout_height="72dp"-->
-            <!--                android:layout_centerHorizontal="true"-->
-            <!--                android:layout_alignParentTop="true"-->
-            <!--                app:srcCompat="@mipmap/loction_icon"-->
-            <!--                tools:srcCompat="@mipmap/loction_icon" />-->
-
-            <EditText
-                android:id="@+id/location_country_spinner"
+            <LinearLayout
                 android:layout_width="300dp"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/terms_and_conditions_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الشروط والاحكام"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="5dp"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/terms_and_conditions_anim"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:lottie_rawRes="@raw/checked_done_4" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/continue_to_phone_verification_btn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/create_account_2_btn"
-                android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_24"
-                android:drawableRight="@drawable/ic_baseline_outlined_flag_24"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/create_accoutt_btn"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="البلد"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff" />
-
-            <EditText
-                android:id="@+id/location_city_spinner"
-                android:layout_width="300dp"
-                android:layout_height="45dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/create_account_2_btn"
-                android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_24"
-                android:drawableRight="@drawable/ic_baseline_business_24"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/hacen_casablanca_light"
-                android:hint="المدينة"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textColor="#fff"
-                android:textColorHint="#fff" />
-
-
+                android:text="استمرار"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"/>
         </RelativeLayout>
 
 
-        <!--        <RelativeLayout style="@style/profileDetailsLayout">-->
-        <!--            <ImageView-->
-        <!--                android:id="@+id/passwordImageView_school"-->
-        <!--                android:src="@drawable/ic_lock_24dp"-->
-        <!--                style="@style/profileDetailsImage" />-->
 
-        <!--            <TextView-->
-        <!--                android:text="Password"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsTextMain" />-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/passwordTextView_school"-->
-        <!--                android:text="**************"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsMiniText" />-->
-
-        <!--            <ImageView-->
-        <!--                android:id="@+id/edit_password_school"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_alignParentTop="true"-->
-        <!--                android:layout_alignParentEnd="true"-->
-        <!--                android:src="@drawable/ic_edit_24dp"-->
-        <!--                android:layout_marginTop="10dp"-->
-        <!--                android:layout_marginEnd="20dp" />-->
-
-        <!--        </RelativeLayout>-->
-
-        <!--        <RelativeLayout style="@style/profileDetailsLayout">-->
-        <!--            <ImageView-->
-        <!--                android:id="@+id/passwordImageView_school"-->
-        <!--                android:src="@drawable/ic_lock_24dp"-->
-        <!--                style="@style/profileDetailsImage" />-->
-
-        <!--            <TextView-->
-        <!--                android:text="Password"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsTextMain" />-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/passwordTextView_school"-->
-        <!--                android:text="**************"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsMiniText" />-->
-
-        <!--            <ImageView-->
-        <!--                android:id="@+id/edit_password_school"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_alignParentTop="true"-->
-        <!--                android:layout_alignParentEnd="true"-->
-        <!--                android:src="@drawable/ic_edit_24dp"-->
-        <!--                android:layout_marginTop="10dp"-->
-        <!--                android:layout_marginEnd="20dp" />-->
-
-        <!--        </RelativeLayout>-->
-
-        <!--        <RelativeLayout style="@style/profileDetailsLayout">-->
-        <!--            <ImageView-->
-        <!--                android:id="@+id/passwordImageView_school"-->
-        <!--                android:src="@drawable/ic_lock_24dp"-->
-        <!--                style="@style/profileDetailsImage" />-->
-
-        <!--            <TextView-->
-        <!--                android:text="Password"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsTextMain" />-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/passwordTextView_school"-->
-        <!--                android:text="**************"-->
-        <!--                android:layout_toRightOf="@id/passwordImageView_school"-->
-        <!--                style="@style/profileDetailsMiniText" />-->
-
-        <!--            <ImageView-->
-        <!--                android:id="@+id/edit_password_school"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_alignParentTop="true"-->
-        <!--                android:layout_alignParentEnd="true"-->
-        <!--                android:src="@drawable/ic_edit_24dp"-->
-        <!--                android:layout_marginTop="10dp"-->
-        <!--                android:layout_marginEnd="20dp" />-->
-
-        <!--        </RelativeLayout>-->
 
         <View style="@style/proifleDetailsView" />
 
