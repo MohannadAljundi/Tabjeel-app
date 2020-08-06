@@ -20,14 +20,12 @@ import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
-//    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        toolbar = getSupportActionBar();
 
         // load the store fragment by default
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.nav_view);
@@ -46,27 +44,22 @@ public class HomeActivity extends AppCompatActivity {
             Fragment fragment = null;
             switch (item.getItemId()) {
                 case R.id.action_home:
-//                    toolbar.setTitle("الرئيسبة");
                     fragment = new HomeFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.action_profile:
-//                    toolbar.setTitle("الملف الشخصي");
                     fragment = new ProfileFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.action_contact_us:
-//                    toolbar.setTitle("اتصل بنا");
 //                    fragment = new ContactUsFragment();
 //                    loadFragment(fragment);
                     return true;
                 case R.id.action_about_us:
-//                    toolbar.setTitle("من نحن");
                     fragment = new AboutUsFragment();
                     loadFragment(fragment);
                     return true;
                 case R.id.action_calendar:
-//                    toolbar.setTitle("التقويم");
                     fragment = new CalendarFragment();
                     loadFragment(fragment);
                     return true;
