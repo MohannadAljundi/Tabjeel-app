@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutApp.AboutPage"></activity>
+        <activity android:name=".Home.HomeActivity"></activity>
+        <activity android:name=".Setting.ContactActivity" />
+        <activity android:name=".Setting.HelpActivity" />
+        <activity
+            android:name=".Setting.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Home.HomeTestActivity" />
+        <activity android:name=".Dialogs.TermsAndCondtionsActivity" />
+        <activity android:name=".AboutApp.AboutPage" />
         <activity android:name=".Splash.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

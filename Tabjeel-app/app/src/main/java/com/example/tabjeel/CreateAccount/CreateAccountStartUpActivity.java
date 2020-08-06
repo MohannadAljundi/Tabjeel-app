@@ -12,43 +12,25 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.tabjeel.Dialogs.Terms;
+import com.example.tabjeel.Dialogs.TermsAndCondtionsActivity;
 import com.example.tabjeel.R;
 
 
 public class CreateAccountStartUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private boolean isCheckedDone_ConditionalAndTerms = false;
-    private String text;
-    private TextView terms;
+    private String terms_str;
+    private Terms terms = new Terms();
+    private TextView terms_txt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_start_up);
 
-
-        findViewById(R.id.continue_to_phone_verification_btn).setOnClickListener(this);
-        terms = findViewById(R.id.terms_and_conditions_text);
-
-
-        final LottieAnimationView ConditionalAndTerms_CheckBox = findViewById(R.id.terms_and_conditions_anim);
-        ConditionalAndTerms_CheckBox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(isCheckedDone_ConditionalAndTerms){
-                    ConditionalAndTerms_CheckBox.setSpeed(-1);
-                    ConditionalAndTerms_CheckBox.playAnimation();
-                    isCheckedDone_ConditionalAndTerms = false;
-                }else {
-                    ConditionalAndTerms_CheckBox.setSpeed(1);
-                    ConditionalAndTerms_CheckBox.playAnimation();
-                    isCheckedDone_ConditionalAndTerms = true;
-                }
-            }
-        });
-
-
-        text = "1.\n" +
+        terms_str = "1.\n" +
                 "Why Mobile Apps Need Terms & Conditions\n" +
                 "1.1.\n" +
                 "Business Benefits\n" +
@@ -78,29 +60,57 @@ public class CreateAccountStartUpActivity extends AppCompatActivity implements V
                 "Getting Agreement to Your App's Terms and Conditions\n" +
                 "5.\n" +
                 "How to Create a Terms and Conditions for Your Mobile App";
-        terms.setOnClickListener(new View.OnClickListener() {
+
+        terms.setTerms_str(terms_str);
+        findViewById(R.id.continue_to_phone_verification_btn).setOnClickListener(this);
+        terms_txt = findViewById(R.id.terms_and_conditions_text);
+
+        terms_txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-                boolean agreed = sharedPreferences.getBoolean("agreed",false);
-                if (!agreed) {
-                    new AlertDialog.Builder(this)
-                            .setTitle("License agreement")
-                            .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+//                final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(CreateAccountStartUpActivity.this);
+//                boolean agreed = sharedPreferences.getBoolean("agreed",false);
+//                if (!agreed) {
+                    new AlertDialog.Builder(CreateAccountStartUpActivity.this)
+                            .setTitle("الاحكام و الشروط")
+                            .setPositiveButton("قرأته بتمعن", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    SharedPreferences.Editor editor = sharedPreferences.edit();
-                                    editor.putBoolean("agreed", true);
-                                    editor.apply();
+//                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+//                                    editor.putBoolean("agreed", true);
+//                                    editor.apply();
                                 }
                             })
-                            .setMessage(text)
+                            .setMessage(terms_str)
                             .show();
+                }
+            //}
+        });
+
+
+
+
+        final LottieAnimationView ConditionalAndTerms_CheckBox = findViewById(R.id.terms_and_conditions_anim);
+        ConditionalAndTerms_CheckBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isCheckedDone_ConditionalAndTerms){
+                    ConditionalAndTerms_CheckBox.setSpeed(-1);
+                    ConditionalAndTerms_CheckBox.playAnimation();
+                    isCheckedDone_ConditionalAndTerms = false;
+                }else {
+                    ConditionalAndTerms_CheckBox.setSpeed(1);
+                    ConditionalAndTerms_CheckBox.playAnimation();
+                    isCheckedDone_ConditionalAndTerms = true;
                 }
             }
         });
 
+
+
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -109,6 +119,7 @@ public class CreateAccountStartUpActivity extends AppCompatActivity implements V
                 Intent i = new Intent(getApplicationContext(), CreateAccountPhoneVerification.class);
                 startActivity(i);
             }break;
+
 
         }
     }

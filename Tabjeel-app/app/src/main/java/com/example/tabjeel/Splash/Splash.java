@@ -9,7 +9,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.tabjeel.CreateAccount.CreateAccountHome;
+import com.example.tabjeel.Home.HomeActivity;
+import com.example.tabjeel.Home.HomeTestActivity;
 import com.example.tabjeel.R;
 
 public class Splash extends AppCompatActivity {
@@ -32,7 +33,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(getApplicationContext(), CreateAccountHome.class);
+                Intent mainIntent = new Intent(getApplicationContext(), HomeActivity.class);
                 Splash.this.startActivity(mainIntent);
                 Splash.this.finish();
             }

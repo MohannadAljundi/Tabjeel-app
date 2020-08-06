@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Every item for another tab-->
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="First item" />
+    <item
+        android:id="@+id/bottomBarItemSecond"
+        android:icon="@drawable/ic_baseline_local_offer_24"
+        android:title="Second item" />
+    <item
+        android:id="@+id/bottomBarItemThird"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="Third item" />
+</menu>

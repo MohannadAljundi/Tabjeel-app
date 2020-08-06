@@ -37,7 +37,7 @@
                 android:layout_marginEnd="55dp"
                 android:fontFamily="@font/hacen_casablanca_light"
                 android:text="@string/already_have_account_res"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
