@@ -39,4 +39,17 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="done">done</string>
+    <string name="main">main</string>
+    <string name="view_renderer">view_renderer</string>
+    <string name="view_binder">view_binder</string>
+    <string name="composite_view_renderer">composite_view_renderer</string>
+    <string name="view_state">view_state</string>
+    <string name="diff_util">diff_util</string>
+    <string name="payload">payload</string>
+    <string name="load_more">load_more</string>
+    <string name="view">view</string>
+    <string name="selected_users">Selected Users</string>
+    <string name="ok">Ok</string>
+    <string name="view_all">view all</string>
 </resources>

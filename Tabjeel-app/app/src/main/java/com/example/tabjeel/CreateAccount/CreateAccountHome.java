@@ -9,18 +9,29 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tabjeel.Login.LoginActivity;
 import com.example.tabjeel.R;
+import com.example.tabjeel.Utils.UserSessionManager;
 import com.example.tabjeel.anim.LoadingGreenActivity;
+
+import java.util.HashMap;
 
 
 public class CreateAccountHome extends AppCompatActivity implements View.OnClickListener {
+
+    UserSessionManager session ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_home);
 
+        session = new UserSessionManager(getApplicationContext());
+
+
         findViewById(R.id.start_create_account_btn).setOnClickListener(this);
         findViewById(R.id.already_have_account_txt).setOnClickListener(this);
+
+
     }
 
     @Override

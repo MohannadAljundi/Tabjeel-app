@@ -7,16 +7,30 @@
     tools:context=".anim.LoadingGreenActivity">
 
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/splash_anim_icon"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loading_blue_green" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/nwe_account_anim_icon"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_ring_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hacen_casablanca_light"
+            android:text="يتم تجهيز المعلومات المطلوبة ..."
+            android:textSize="26sp"
+            android:layout_alignBottom="@id/nwe_account_anim_icon"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

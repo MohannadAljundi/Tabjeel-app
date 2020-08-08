@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Login.LoginActivity"
-    tools:showIn="@layout/activity_login">
+    tools:showIn="@layout/activity_login"
+    android:background="#FDFDFD">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +15,8 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:background="@drawable/create_account_shadow_btn">
 
 
         <RelativeLayout style="@style/profileDetailsLayout">
@@ -22,7 +24,7 @@
             <EditText
                 android:id="@+id/login_email"
                 android:layout_width="300dp"
-                android:layout_height="45dp"
+                android:layout_height="60dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/create_account_shadow_btn"
                 android:drawableRight="@drawable/ic_baseline_email_24"
@@ -44,7 +46,7 @@
             <EditText
                 android:id="@+id/login_password"
                 android:layout_width="300dp"
-                android:layout_height="45dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/create_account_shadow_btn"
                 android:drawableRight="@drawable/ic_baseline_lock_blue_24"
@@ -74,8 +76,8 @@
                     android:id="@+id/login_btn"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:background="@drawable/create_account_4_btn"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/create_account_shadow_btn_2"
                     android:fontFamily="@font/hacen_casablanca_light"
                     android:text="تسجيل الدخول"
                     android:textAllCaps="false"

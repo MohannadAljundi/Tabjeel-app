@@ -63,7 +63,7 @@
         <RelativeLayout style="@style/profileDetailsLayout">
 
             <com.chaos.view.PinView
-                android:id="@+id/pinView"
+                android:id="@+id/pinView_verification"
                 style="@style/PinWidget.PinView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 android:inputType="number"
                 android:padding="10dp"
                 android:textSize="18sp"
-                app:itemCount="4"
+                app:itemCount="6"
                 app:itemHeight="48dp"
                 app:itemRadius="10dp"
                 app:lineColor="@color/colorPrimaryDark"
@@ -114,8 +114,19 @@
 
         </RelativeLayout>
 
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ProgressBar
+                android:id="@+id/verification_pin_conform_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
         <RelativeLayout style="@style/profileDetailsLayout"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="20dp">
 
             <Button
                 android:id="@+id/create_account_btn"
@@ -126,7 +137,7 @@
                 android:background="@drawable/create_accoutt_btn"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hacen_casablanca_light"
-                android:text="استمرار"
+                android:text="إنشاء حساب"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:textAlignment="center"

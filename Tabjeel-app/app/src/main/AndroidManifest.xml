@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.HomeActivity"></activity>
+        <activity android:name=".anim.CreateAccountSuccessfullyAnimActivity"></activity>
+        <activity android:name=".anim.LogOutAnimActivity" />
+        <activity android:name=".ImageSlider.AutoImageSliderActivity" />
+        <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Setting.ContactActivity" />
         <activity android:name=".Setting.HelpActivity" />
         <activity

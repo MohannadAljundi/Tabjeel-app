@@ -22,7 +22,7 @@
                 android:fontFamily="@font/hacen_casablanca_light"
                 android:text="@string/start_create_account_res"
                 android:textAllCaps="false"
-                android:textColor="#0A60D1"
+                android:textColor="#000"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 style="@style/profileStyledBackButton"/>

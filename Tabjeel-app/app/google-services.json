@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201871909326",
+    "firebase_url": "https://tabjeel-app.firebaseio.com",
+    "project_id": "tabjeel-app",
+    "storage_bucket": "tabjeel-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201871909326:android:80f5a7a9cc742e3a108b9f",
+        "android_client_info": {
+          "package_name": "com.example.tabjeel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201871909326-utcapuca7flq73d8fh003l0esvnvvnjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tabjeel",
+            "certificate_hash": "0ddaec676ccc9c3b9944d68d29db26fda4a97dbc"
+          }
+        },
+        {
+          "client_id": "201871909326-o3j004jptbuve9nt3rb4su14ige67ogr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBipEyqs_l5FQcbbnsqeXpOsoR27t-fW7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201871909326-o3j004jptbuve9nt3rb4su14ige67ogr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

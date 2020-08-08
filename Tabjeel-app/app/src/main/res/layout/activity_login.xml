@@ -11,6 +11,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FDFDFD"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -18,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="@color/blue"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar"
             app:expandedTitleMarginEnd="64dp"
@@ -31,15 +31,15 @@
                 android:layout_centerInParent="true"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:background="@color/white"
-                android:id="@+id/linearLayout">
+                android:background="#FDFDFD"
+                android:id="@+id/linearLayout"
+                android:layout_marginBottom="60dp">
 
                 <ImageView
                     android:id="@+id/login_icon"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginBottom="85dp"
                     app:srcCompat="@mipmap/login_icon"
                     tools:srcCompat="@mipmap/login_icon" />
 

@@ -8,12 +8,31 @@
     android:clipChildren="false"
     android:fitsSystemWindows="true"
     tools:context=".Home.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <FrameLayout
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/cordinatorBottom"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_home" />
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/cordinatorBottom"
         android:layout_width="match_parent"
@@ -41,7 +60,8 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginEnd="0dp"
                 android:background="@drawable/background_transparent"
-                app:labelVisibilityMode="selected"
+                app:labelVisibilityMode="labeled"
+                app:itemIconTint="@drawable/tab_bottom_nav_bar_color"
                 app:itemRippleColor="@color/green_grows"
                 app:itemTextColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
